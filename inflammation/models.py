@@ -82,25 +82,25 @@ def attach_names(data, names):
     return(output)
 
 
-data = np.array([[1., 2., 3.], [4., 5., 6.]])
-names = ['Alice', 'Bob']
+# data = np.array([[1., 2., 3.], [4., 5., 6.]])
+# names = ['Alice', 'Bob']
+#
+# output = attach_names(data, ['Alice', 'Bob'])
+# print(output)
 
-output = attach_names(data, ['Alice', 'Bob'])
-print(output)
 
 
-
-class Book:
-    """ A book and its author """
-    def __init__(self, title, author):
-        self.title = title
-        self.author = author
-
-    def __str__(self):
-        return self.title + ' by ' + self.author
-
-book = Book('A book', 'Me')
-print(book)
+# class Book:
+#     """ A book and its author """
+#     def __init__(self, title, author):
+#         self.title = title
+#         self.author = author
+#
+#     def __str__(self):
+#         return self.title + ' by ' + self.author
+#
+# book = Book('A book', 'Me')
+# print(book)
 
 
 
@@ -157,25 +157,25 @@ class Patient(Person):
 
 
 
-alice = Patient('Alice')
-alice.add_observation(3)
-alice.add_observation(3, day=5)
-alice.add_observation(10, day=10)
-bob = Patient('Bob')
-
-print(alice)
-for obs in alice.observations:
-    print('Day = ' + str(obs.day) + ', Value = ' + str(obs.value))
-
-doc1 = Doctor('Hugh Montgomery')
-doc1.add_patient(alice)
-doc1.add_patient(alice)
-doc1.add_patient(bob)
-
-print(doc1)
-for pat in doc1.patients:
-    print(pat.name)
-
+# alice = Patient('Alice')
+# alice.add_observation(3)
+# alice.add_observation(3, day=5)
+# alice.add_observation(10, day=10)
+# bob = Patient('Bob')
+#
+# print(alice)
+# for obs in alice.observations:
+#     print('Day = ' + str(obs.day) + ', Value = ' + str(obs.value))
+#
+# doc1 = Doctor('Hugh Montgomery')
+# doc1.add_patient(alice)
+# doc1.add_patient(alice)
+# doc1.add_patient(bob)
+#
+# print(doc1)
+# for pat in doc1.patients:
+#     print(pat.name)
+#
 
 
 
