@@ -44,6 +44,15 @@ def daily_min(data):
    """
     return np.min(data, axis=0)
 
+def daily_std(data):
+    """Calculate the daily standard deviation of a 2D array for each day.
+        Sets missing values to zero.
+
+    :param data: 2D data array
+    :returns: An array of std deviations"""
+
+    data[np.isnan(data)] = 0
+    return np.std(data, axis=0, ddof=1)
 
 def patient_normalise(data):
     """
