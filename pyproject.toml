@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "inflammation"
+version = "1.0.0"
+description = "Analyse patient inflammation data"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+matplotlib = "^3.5.1"
+numpy = "^1.22.2"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.12.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
