@@ -4,10 +4,11 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 
-def visualize(data_dict):
+def visualize(data_dict) -> None:
     """Display plots of basic statistical properties of the inflammation data.
 
     :param data_dict: Dictionary of name -> data to plot
+    :returns: None
     """
     # TODO(lesson-design) Extend to allow saving figure to file
 
